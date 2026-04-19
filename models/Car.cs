@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp13.models
 {
-    internal class Car
+    internal class Car : Vehicle
     {
         int _doorsNum;
+
+        public Car(string brand, string model, double mile, int doorsNum) : base(brand, model, mile)
+        {
+            DoorsNum = doorsNum;
+        }
+
         public int DoorsNum 
         {
             get
@@ -31,7 +37,7 @@ namespace ConsoleApp13.models
 
         public void ShowFullInfo()
         {
-            Console.WriteLine($"");
+            Console.WriteLine($"Brand: {Brand}, Model: {Model}, Mile: {Mile}, WheelsNum: {DoorsNum}");
         }
 
     }

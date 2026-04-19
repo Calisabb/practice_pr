@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp13.models
 {
-    internal class Bcycle: Vehicle
+    internal class Bcycle : Vehicle
     {
         private int _wheelsNum;
+
+        public Bcycle(string brand, string model, double mile, int wheelsNum) : base(brand, model, mile)
+        {
+            WheelsNum = wheelsNum;
+        }
+
         public int WheelsNum 
         {
             get
