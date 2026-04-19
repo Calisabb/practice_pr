@@ -47,6 +47,14 @@ namespace ConsoleApp13.models
             }
         }
         private double _mile;
+
+        public Vehicle(string brand, string model, double mile)
+        {
+            Brand = brand;
+            Model = model;
+            Mile = mile;
+        }
+
         public double Mile
         {
             get 

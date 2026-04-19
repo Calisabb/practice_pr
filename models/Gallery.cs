@@ -15,14 +15,14 @@ namespace ConsoleApp13.models
             cars.Add(car);
         }
 
-        //public List<Car> Filter(string brand)
-        //{
-        //    return cars.FindAll(x => x.Brand == brand);
-        //}
-        //public List<Car> Filter(double mile)
-        //{
-        //    return cars.FindAll(x => x.Mile == mile);
-        //}
+        public List<Car> Filter(string brand)
+        {
+            return cars.FindAll(x => x.Brand==brand);
+        }
+        public List<Car> Filter(double mile)
+        {
+            return cars.FindAll(x => x.Mile == mile);
+        }
 
     }
 }
